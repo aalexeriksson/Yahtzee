@@ -1,16 +1,29 @@
 table{
     border-collapse:collapse;
+    width: 100%;
 
 }
-th.firstcol{
+.dark{
     background-color: rgb(76, 76, 76)
 }
-th.allothercols{
+.lighter{
     background-color:grey
     
 }
-
-table, th, td {
-    border: 1px solid red;
+.light{
+    background-color:lightgrey
 
 }
+
+table, td {
+    border: 1px solid black;
+
+}
+td, input{
+    width:80px;
+text-align:center;
+}
+#darker{
+    background-color:rgb(93, 93, 93)
+}
+
