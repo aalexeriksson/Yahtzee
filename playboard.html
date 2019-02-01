@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 
 <head>
 <link rel="stylesheet" href="yahtseestyle.css">
-
+<title>Yahtsee task</title>
 </head>
 
 <body>
     <table>
-        
-        <th colspan="5">Yahtzee</th>
+<col class="light"/>
+<col class="darker"/>
+<col class="light"/>
+<col class="darker"/>
+<col class="light"/>
+    </col>
+
+
+
+                 
+        <tr class="light">
+                <td id ="darker">Players</td> 
+                <td class="light" >Player 1</td>
+                <td class="light" >Player 2</td>
+                <td class="light">Player 3</td>
+                <td class="light">Player 4</td>
+
+        </tr>
         <tr>
+            <td >   Aces   </td>
             <td>
-                Aces
+                <input type="number" min="0" step="1">
             </td>
-            <td>
+            <td >
                 <input type="number" min="0" step="1">
             </td>
             <td>
                 <input type="number" min="0" step="1">
             </td>
             <td>
-                <input type="number" min="0" step="1">
-            </td>
-            <td>
+
                 <input type="number" min="0" step="1">
             </td>
         </tr>
@@ -35,96 +50,227 @@
                     <input type="number" min="0" step="2">
             </td>
             <td>
-                    <input type="number" min="0" step="2">
+                        <input type="number" min="0" step="2">
             </td>
             <td>
                     <input type="number" min="0" step="2">
             </td>
             <td>
-                    <input type="number" min="0" step="2">
+                        <input type="number" min="0" step="2">
             </td>
         </tr>
         <tr>  
-            <td>
+        <td>
                 Threes
             </td> 
             <td>
                     <input type="number" min="0" step="3">
             </td>
             <td>
-                    <input type="number" min="0" step="3">
+                        <input type="number" min="0" step="3">
             </td>
             <td>
                     <input type="number" min="0" step="3">
             </td>
             <td>
-                    <input type="number" min="0" step="3">
+                        <input type="number" min="0" step="3">
             </td>
         </tr>
         <tr>
-            <td>
+         <td>
                 Fours
             </td>
             <td>
                     <input type="number" min="0" step="4">
             </td>
             <td>
-                    <input type="number" min="0" step="4">
+                        <input type="number" min="0" step="4">
             </td>
             <td>
                     <input type="number" min="0" step="4">
             </td>
             <td>
-                    <input type="number" min="0" step="4">
+                        <input type="number" min="0" step="4">
             </td>
         </tr>
         <tr>
-            <td>
+         <td>
                 Fives
             </td>    
             <td>
                     <input type="number" min="0" step="5">
             </td>
-            <td>
-                    <input type="number" min="0" step="5">
+            <td >
+                        <input type="number" min="0" step="5">
             </td>
             <td>
                     <input type="number" min="0" step="5">
             </td>
             <td>
-                    <input type="number" min="0" step="5">
+                        <input type="number" min="0" step="5">
             </td>
         </tr>
         <tr>   
+        <td>      Sixes
+            </td>
             <td>
-                Sixes
+                    <input type="number" min="0" step="6">
+            </td>
+            <td >
+                        <input type="number" min="0" step="6">
             </td>
             <td>
                     <input type="number" min="0" step="6">
             </td>
             <td>
-                    <input type="number" min="0" step="6">
-            </td>
-            <td>
-                    <input type="number" min="0" step="6">
-            </td>
-            <td>
-                    <input type="number" min="0" step="6">
+                        <input type="number" min="0" step="6">
             </td>
         </tr>
         <tr>
-            <td>Sum:</td>
+            <th id="darker">Sum:</th>
+            <td id="darker">
+                    <input type="number" min="0">
+            </td>
+            <td id="darker">
+                        <input type="number" min="0">
+            </td>
+            <td id="darker">
+                    <input type="number" min="0">
+            </td>
+            <td id="darker">
+                        <input type="number" min="0">
+            </td>
+        </tr>
+
+         <tr>
+            <td >   Three of a kind   </td>
             <td>
-                    <input type="number" min="0">>
+                <input type="number" min="0" step="1">
+            </td>
+            <td >
+                <input type="number" min="0" step="1">
             </td>
             <td>
-                    <input type="number" min="0">>
+                <input type="number" min="0" step="1">
             </td>
             <td>
-                    <input type="number" min="0">>
+
+                <input type="number" min="0" step="1">
+            </td>
+        </tr>
+        <tr>  
+            <td>
+                Four of a kind
+            </td>  
+            <td>
+                    <input type="number" min="0" step="2">
             </td>
             <td>
-                    <input type="number" min="0">>
+                        <input type="number" min="0" step="2">
+            </td>
+            <td>
+                    <input type="number" min="0" step="2">
+            </td>
+            <td>
+                        <input type="number" min="0" step="2">
+            </td>
+        </tr>
+        <tr>  
+        <td>
+                Full house
+            </td> 
+            <td>
+                    <input type="number" min="0" step="3">
+            </td>
+            <td>
+                        <input type="number" min="0" step="3">
+            </td>
+            <td>
+                    <input type="number" min="0" step="3">
+            </td>
+            <td>
+                        <input type="number" min="0" step="3">
+            </td>
+        </tr>
+        <tr>
+         <td>
+                Small straight
+            </td>
+            <td>
+                    <input type="number" min="0" step="4">
+            </td>
+            <td>
+                        <input type="number" min="0" step="4">
+            </td>
+            <td>
+                    <input type="number" min="0" step="4">
+            </td>
+            <td>
+                        <input type="number" min="0" step="4">
+            </td>
+        </tr>
+        <tr>
+         <td>
+Large straight
+            </td>    
+            <td>
+                    <input type="number" min="0" step="5">
+            </td>
+            <td >
+                        <input type="number" min="0" step="5">
+            </td>
+            <td>
+                    <input type="number" min="0" step="5">
+            </td>
+            <td>
+                        <input type="number" min="0" step="5">
+            </td>
+        </tr>
+        <tr>   
+        <td>      Chance
+            </td>
+            <td>
+                    <input type="number" min="0" step="6">
+            </td>
+            <td >
+                        <input type="number" min="0" step="6">
+            </td>
+            <td>
+                    <input type="number" min="0" step="6">
+            </td>
+            <td>
+                        <input type="number" min="0" step="6">
+            </td>
+        </tr>
+              <tr>   
+        <td>      Yahtsee
+            </td>
+            <td>
+                    <input type="number" min="0" step="6">
+            </td>
+            <td >
+                        <input type="number" min="0" step="6">
+            </td>
+            <td>
+                    <input type="number" min="0" step="6">
+            </td>
+            <td>
+                        <input type="number" min="0" step="6">
+            </td>
+        </tr>
+        <tr>
+            <th id="darker" >Total score:</th>
+            <td>
+                    <input type="number" min="0">
+            </td>
+            <td class>
+                        <input type="number" min="0">
+            </td>
+            <td>
+                    <input type="number" min="0">
+            </td>
+            <td class>
+                        <input type="number" min="0">
             </td>
         </tr>
             
