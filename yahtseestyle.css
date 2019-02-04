@@ -20,15 +20,89 @@ table, td {
     border: 1px solid black;
 
 }
-td, input{
+td{
     width:80px;
 text-align:center;
 }
 #darker{
     background-color:rgb(93, 93, 93)
 }
-div{
 
-text-align: center;
+.topnav{
+    overflow: hidden;
+    font-size:14px;
+    background-color:aqua;
+    text-align:center;
+
+}
+topnav input[type=text]{
+    float: right;
+    padding: 8px;
+    border: none;
+    margin-top: 14px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+.topnav a{
+    text-align: center;
+    color:black;
+    float:left;
+    font-size:17px;
+    display:block;
+    padding:14px 16px;
+    background-color:aqua
+
+}
+
+.topnav a:hover{
+    background-color:darkcyan;
+    padding:14px 16px;
+   
+    
+}
+h1{
+    text-align:center;
+    animation-duration:2s;
+    animation-name:slidein;
+    animation-direction:normal;
+    position:relative;
+}
+h2{
+    text-align:center;
+    animation-duration:2s;
+    animation-name:pop;
+    animation-direction:normal;
+    position:relative;
+}
+@keyframes pop{
+    from{
+        left:100%;
+        width:300%;
+    }
+   to {
+       left:100%;
+    width:300%;
+
+    }
+}
+
+@keyframes slidein{
+    from{
+        left: 100%;
+        width:300%;
+
+    }
+    to{
+        left:0%;
+        width:300;
+    
+
+    }
+    
+}
+
+
+div{
+    text-align:center;
 }
 
