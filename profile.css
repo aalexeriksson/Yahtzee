@@ -1,0 +1,98 @@
+table{
+    border-collapse:collapse;
+    width: 100%;
+
+}
+body{
+    background-color: rgb(190, 41, 196)
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+
+}
+body{
+    background-color: rgb(156, 185, 185)
+}
+
+75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+h1 {width: 100%; display: block;}
+h1 :hover {opacity: 0.5;}
+h1 {
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  
+}
+
+h1 {
+	
+	font-size:75px;
+	font-family:de valencia;
+	
+ -webkit-text-fill-color: rgb(242, 245, 91);
+ text-shadow: #EEEE00 0 0 10px, rgba(255, 174, 0, 0.719) 5px 5px 5px;
+} 
+
+img {
+    border: 4px dotted blue;
+  }
+
+p {
+	
+	font-size:35px;
+	font-family:frente h1;
+	
+ -webkit-text-fill-color: rgb(22, 22, 21);
+ 
+} 
+
+h3 {
+    font: size 30px;
+    font-family:frente h1;
+    -webkit-text-fill-color: rgb(15, 31, 104); 
+}
+
+li {
+    font-size: 20px;
+    font-family:frente h1;
+    -webkit-text-fill-color: rgb(0, 0, 0); 
+}
+
+div {
+    font-size: 20px;
+    font-family:frente h1;
+    -webkit-text-fill-color: rgb(235, 202, 57); 
+    text-shadow: rgb(14, 14, 13) 0 0 10px, rgba(44, 44, 43, 0.719) 5px 5px 5px;
+}
+
+
