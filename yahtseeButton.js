@@ -1,5 +1,4 @@
-
- document.addEventListener("DOMContentLoaded", function(event){
+document.addEventListener("DOMContentLoaded", function(event){
     let throwDice=document.getElementById("throwDice");
    
     
@@ -16,7 +15,9 @@
         let textbox5=document.getElementById("textbox5");
 let playboardsum=document.getElementById("darkerSum");
 
-       
+  if(% == 3)   {
+      message = "Next player";
+  }  
 
         if(document.getElementById("checkbox1").checked == false){
             let textbox1=document.getElementById("textbox1");
