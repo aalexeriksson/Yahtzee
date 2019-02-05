@@ -81,10 +81,22 @@
             textbox2.value=getRandomInt(1,7);
 
         }
+<<<<<<< HEAD
         if(document.getElementById("checkbox3").checked == false){
             let textbox3=document.getElementById("textbox3");
             textbox3.value=getRandomInt(1,7);
 
+=======
+        else{
+            alert("Next player");
+            count=0;
+
+            textbox1.value=0;
+            textbox2.value=0;
+            textbox3.value=0;
+            textbox4.value=0;
+            textbox5.value=0;
+>>>>>>> c4106a55bd55daa63b4a2f0016cff867d1101db9
         }
         if(document.getElementById("checkbox4").checked == false){
             let textbox4=document.getElementById("textbox4");
@@ -106,10 +118,28 @@
         
 let playboardTextboxSum=document.getElementById("playboardsum1")
 
+<<<<<<< HEAD
 
 
 });
 
    
+=======
+>>>>>>> c4106a55bd55daa63b4a2f0016cff867d1101db9
     
      });
+
+     $(document).ready(function(){
+        $("#chatBTN").click(function(){
+            var text = $("#inmsg").val();
+            var name = $("#inName").val();
+
+            var msg = $("<p></p>").text(text).addClass("chatFunction");
+            var msgName = $("<p></p>").text("- " + name).addClass("nameFunction");
+
+            console.log(msg);
+            $('#messages').append(msg);
+            $('#messages').append(msgName);
+        })
+
+    })
