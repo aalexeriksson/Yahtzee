@@ -104,5 +104,21 @@ h2{
 
 div{
     text-align:center;
+    height: 300px;
+    width: 200px;
+}
+
+.chatFunction{
+    text-align:left;
+    border-bottom-style: dotted;
+    border-bottom-color: saddlebrown;
+}
+.nameFunction{
+    text-align:right;
+    padding: 0px;
+}
+#messages{
+    border-style: groove;
+    border-color: red;
 }
 
