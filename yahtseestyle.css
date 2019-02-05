@@ -119,6 +119,7 @@ div{
 }
 #messages{
     border-style: groove;
+    border-spacing: 100px;
     border-color: red;
 }
 
