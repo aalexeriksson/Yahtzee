@@ -51,6 +51,12 @@
         else{
             alert("Next player");
             count=0;
+
+            textbox1.value=0;
+            textbox2.value=0;
+            textbox3.value=0;
+            textbox4.value=0;
+            textbox5.value=0;
         }
 
     let sumTextbox=document.getElementById("sumTextbox");
