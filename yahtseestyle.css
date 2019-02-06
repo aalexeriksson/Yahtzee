@@ -106,10 +106,6 @@ h2{
 
 div{
     text-align:center;
-<<<<<<< HEAD
-=======
-
->>>>>>> 09c088c553afea4ffb133399e99e9b81aa661d9e
 }
 
 .chatFunction{
@@ -122,6 +118,7 @@ div{
     
 }
 #messages{
+    text-align: start;
     border-style: dotted;
     width: 400px;
     height: 500px;
