@@ -1,57 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(event){
 
  document.addEventListener("DOMContentLoaded", function(event){
     let throwDice=document.getElementById("throwDice");
    
-    function calculateScore(){
-        var arrayOfValues=[];
-
-        
-    if (document.getElementById("player1Aces")!==null) { arrayOfValues.push(parseInt(document.getElementById("player1Aces").value)) }
-    if (document.getElementById("player2Aces")!==null) { arrayOfValues.push(parseInt(document.getElementById("player2Aces").value)) }
-    if (document.getElementById("player2Aces")!==null){ arrayOfValues.push(parseInt(document.getElementById("player3Aces").value)) }
-    if (document.getElementById("player2Aces")!==null) { arrayOfValues.push(parseInt(document.getElementById("player4Aces").value)) }
-    if (document.getElementById("player2Aces")!==null){ arrayOfValues.push(parseInt(document.getElementById("player5Aces").value)) }
-
-    var player1_ones = arrayOfValues.filter(value => value == 1);
-    var player1_twos = arrayOfValues.filter(value => value == 2);
-    var player1_threes = arrayOfValues.filter(value => value == 3);
-    var player1_fours = arrayOfValues.filter(value => value == 4);
-    var player1_fives = arrayOfValues.filter(value => value == 5);
-    var player1_sixes = arrayOfValues.filter(value => value == 6);
-
-    sumOnes = player1_ones.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-
-    sumTwos = player1_twos.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-    sumThrees = player1_threes.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-    sumFours = player1_fours.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-    sumFives = player1_fives.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-    sumSixes = player1_sixes.reduce((acc, currValue, currIndex, array) => {
-        return acc + currValue;
-    }, 0);
-    
-    var i;
-    let total = 0;
-    for (i = 0; i < arrayOfValues.length; i++) {
-        let checkedValue = arrayOfValues[i];
-        total += checkedValue;
-        document.getElementById("sumBox").value = total;
-
-    }
-
-    }
-
-    
     function getRandomInt(min,max){
         return Math.floor(Math.random()*(max-min))+min;
     };
@@ -61,11 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event){
      
     
     
-        let textbox2=document.getElementById("textbox2");
-        let textbox3=document.getElementById("textbox3");
-        let textbox4=document.getElementById("textbox4");
-        let textbox5=document.getElementById("textbox5");
-let playboardsum=document.getElementById("darkerSum");
+      
 
        
         if(document.getElementById("checkbox1").checked == false){
@@ -146,9 +92,9 @@ let playboardsum=document.getElementById("darkerSum");
     let sumTextbox=document.getElementById("sumTextbox");
     sumTextbox.value=parseInt(textbox1.value)+parseInt(textbox2.value)+parseInt(textbox3.value)+parseInt(textbox4.value)+parseInt(textbox5.value);
         
-    });
+}
+   })
 
 let playboardTextboxSum=document.getElementById("playboardsum1")
 
-})
-     });
+});
