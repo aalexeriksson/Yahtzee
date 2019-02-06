@@ -8,17 +8,14 @@ document.addEventListener("DOMContentLoaded", function(event){
 
    throwDice.addEventListener("click", function(event){ 
     
-       
+    
         let textbox2=document.getElementById("textbox2");
         let textbox3=document.getElementById("textbox3");
         let textbox4=document.getElementById("textbox4");
         let textbox5=document.getElementById("textbox5");
 let playboardsum=document.getElementById("darkerSum");
 
-  if(% == 3)   {
-      message = "Next player";
-  }  
-
+       
         if(document.getElementById("checkbox1").checked == false){
             let textbox1=document.getElementById("textbox1");
             textbox1.value=getRandomInt(1,7);
