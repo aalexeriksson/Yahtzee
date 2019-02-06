@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="stylinggel.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="ChatFunctionStyle.js"></script>
+    <link href="yahtseestyle.css" rel="stylesheet" type="text/css">
 
 
     
 </head>
-<body>
+<body id="chatRoom">
     
     
-    <label for="message">Chatzee room</label>
+    <h1 id="chatzee">Chatzee room</h1>
     <br>
-    <textarea id="message" autofocus rows="10" cols="40" maxlength="160" value="message" placeholder="Do you even lift?"></textarea>
+    <input id="inName" type="textbox" autofocus maxlength="160" value="" placeholder="Name"></input>
     <br>
-    <input type="submit" value="SubmIT">
+    <input id="inmsg" type="textbox" autofocus maxlength="160" value="" placeholder="Do you even lift?"></input>
+    
+    <button id="chatBTN" value="submit">Submit</button>
+    <div id="messages" >
+
+    </div>
+
 
 
 </body>
